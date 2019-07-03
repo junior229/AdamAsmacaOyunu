@@ -25,7 +25,10 @@ while (True):
 		while (can > 0):
 			analiz = True
 			tahmin = input("Tahmin:")
-			if (tahmin == "1"):
+			if len(tahmin) > 1:
+				print(">>> Lütfen sadece bir harf veya [1,2] giriniz")
+				print(liste)
+			elif (tahmin == "1"):
 				k_tahmin = input("Tahmininiz nedir :")
 				if (k_tahmin == gizli_kelime):
 					liste.clear()
@@ -38,6 +41,9 @@ while (True):
 					can -= 1
 					print(f"Can:",can)
 					print(liste)
+					if can == 0:
+						print(">>> KAYBETTİNİZ <<<")
+						break
 					continue
 			elif (tahmin == "2"):
 				print("Çıkış yapılıyor...")
