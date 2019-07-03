@@ -51,7 +51,7 @@ while (True):
 				print("Çıkış Yapıldı ✓")
 				break
 			elif not(tahmin):
-				print("> Lütfen tahmin giriniz...")
+				print("> Lütfen harf giriniz...")
 			else:
 				if tahmin in harfler:
 					print("> Bu karakter girildi")
