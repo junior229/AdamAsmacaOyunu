@@ -39,7 +39,7 @@ while (True):
 				else:
 					print("> Yanlış tahmin")
 					can -= 1
-					print(f"Can:",can)
+					print(f"Can:{can}")
 					print(liste)
 					if can == 0:
 						print(">>> KAYBETTİNİZ <<<")
